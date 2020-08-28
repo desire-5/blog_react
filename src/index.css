@@ -1,13 +1,89 @@
-body {
+body{
+  font: 1.6rem Helvetica;
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+.form{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border: .1rem solid #c1c1c1; 
+  height: 100%;
+} 
+.form-container {
+  border: 0.1rem #c0c0c0 solid;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  width: 30rem;
+}
+.form-container li{
+  display:flex;
+  flex-direction: column;
+  margin-top:1rem;
+  margin-bottom: 1rem;
+}
+.form-container li input{
+  margin-top: .2rem;
+  padding: 1rem;
+  border: 0.1rem #c0c0c0 solid;
+  border-radius: .5rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input.userId{
+  margin: .5rem;
+  padding: 1rem;
+  border: 0.1rem #c0c0c0 solid;
+  border-radius: .5rem;
+}
+.button{
+  padding:.5rem;
+  cursor: pointer;
+  border-radius: .5rem;
+  border: .1rem #808080 solid;
+  margin-bottom: .2rem;
+  
+}
+.action{
+  width: 100%;
+}
+.button:hover{
+border: .1rem solid #404040;
+}
+button.primary{
+  background-color: #f0c040;
+  padding: 1rem;
+}
+.button.secondary {
+  background-color: #f0f0f0;
+  padding: 1rem;
+}
+.product-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 1rem;
+}
+.product-search{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.details{
+  margin: 1rem;
+  
+}
+.detailsTitle{
+  font-size: large;
+  font-weight: 700;
+  text-align: center;
+}
+.detailsBody{
+
+  text-align: center;
+  width: 50%;
+  margin:0 auto;
+  padding: 1.5rem;
 }
